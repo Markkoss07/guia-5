@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int numeros[10];
+    int maximo;
+    int posicion;
+
+    for(int i = 0; i < 10; i++)
+    {
+        cout << "Ingrese un numero: ";
+        cin >> numeros[i];
+    }
+
+    maximo = numeros[0];
+    posicion = 0;
+
+    for(int i = 1; i < 10; i++)
+    {
+        if(numeros[i] > maximo)
+        {
+            maximo = numeros[i];
+            posicion = i;
+        }
+    }
+
+    cout << "El valor maximo es: " << maximo << endl;
+    cout << "Su posicion en el vector es: " << posicion + 1;
+
+    return 0;
+}
