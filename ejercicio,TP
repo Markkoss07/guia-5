@@ -1,0 +1,126 @@
+#include <iostream>
+#include "funciones.h"
+#include "jugar.h"
+
+using namespace std;
+/*void mostrarMenu();
+void jugar();
+void estadisticas();
+void reglas();
+
+
+void mostrarMenu(){
+cout << "===================================== "<< endl;
+cout << "================= Crisis de los 40 =================================" << endl;
+cout << endl;
+cout << "1 - JUGAR" << endl
+<< "2 - ESTADISTICAS" << endl
+<< "3- REGLAS" << endl;
+cout << "===================================================================" << endl;
+cout << "0 - SALIR" << endl;
+}
+
+void jugar(){
+cout << "Iniciando nueva partida..." << endl;
+}
+
+
+void estadisticas(){
+cout << "Estadisticas del juego" << endl;
+
+}
+
+void reglas(){
+    cout << "======================== REGLAS ===========================" << endl;
+}
+
+*/
+
+int main(){
+int opcion;
+    do{
+        mostrarMenu();
+
+        cin >> opcion;
+
+        switch(opcion){
+            case 1:
+                jugar();
+            break;
+            case 2:
+                estadisticas();
+            break;
+            case 3:
+                reglas();
+            break;
+            case 0:
+                cout << "Gracias por jugar a Crisis de los 40" << endl;
+            break;
+            default:
+                cout << "Opcion incorrecta, intente nuevamente.." << endl;
+            break;
+        }
+
+    }while(opcion != 0);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+//EN FUNCIONES.CPP
+
+#include <iostream>
+using namespace std;
+
+void mostrarMenu(){
+cout << "===================================== "<< endl;
+cout << "================= Crisis de los 40 =================================" << endl;
+cout << endl;
+cout << "1 - JUGAR" << endl
+<< "2 - ESTADISTICAS" << endl
+<< "3- REGLAS" << endl;
+cout << "===================================================================" << endl;
+cout << "0 - SALIR" << endl;
+}
+
+int jugar(int n){
+cout << "Iniciando nueva partida..." << endl;
+return 0;
+}
+
+
+void estadisticas(){
+cout << "Estadisticas del juego" << endl;
+
+}
+
+void reglas(){
+    cout << "======================== REGLAS ===========================" << endl;
+}
+
+/*int main(){
+int
+
+
+return 0;
+}
+*/
+
+
+FUNCIONES.H
+
+
+#pragma once
+using namespace std;
+
+void mostrarMenu();
+void jugar();
+void estadisticas();
+void reglas();
