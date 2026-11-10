@@ -2,6 +2,38 @@
 #include <iostream>
 using namespace std;
 
+
+/*Hacer un programa para ingresar 10 números y guardarlos en un vector.
+Determinar e informar cuál es la suma de los valores del vector
+*/
+
+/*
+void cargarVector(int v[], int tam) {
+    for (int i = 0; i < tam; i++) {
+        cout << "Ingrese el numero " << i + 1 << ": ";
+        cin >> v[i];
+    }
+}
+
+void mostrarVector(int v[], int tam) {
+    for (int i = 0; i < tam; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+void ejercicio1() {
+    int v[N];
+    cargarVector(v, N);
+
+    int suma = 0;
+    for (int i = 0; i < N; i++) {
+        suma += v[i];
+    }
+    cout << "La suma es: " << suma << endl;
+}
+*/
+
 int main()
 {
     int numeros[10];
